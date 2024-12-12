@@ -28,12 +28,12 @@ def get_cpu_usage():
     try:
         period = request.args.get("period", default=DAY, type=float)
     except ValueError:
-        raise InvalidInputError("'period' must be a positive integer")
+        raise InvalidInputError("'period' must be a positive number")
 
     try:
         interval = request.args.get("interval", default=HOUR, type=int)
     except ValueError:
-        raise InvalidInputError("'interval' must be a number")
+        raise InvalidInputError("'interval' must be a positive integer")
 
     validate_interval(hours=period, interval=interval)
 

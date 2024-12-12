@@ -12,10 +12,10 @@ def get_times_iso_8061_utc(hours: float):
 
 def validate_interval(hours: float, interval: int):
     if hours <= 0:
-        raise ValueError("'hours' must be positive.")
+        raise InvalidInputError("'period' must be positive.")
 
     if interval <= 0:
-        raise ValueError("'interval' must be a positive integer.")
+        raise InvalidInputError("'interval' must be a positive integer.")
 
     if hours <= 15 * 24 and interval % 60:
         raise InvalidIntervalError(

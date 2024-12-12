@@ -63,8 +63,3 @@ class AWSInstance:
         print(len(result))
 
         return result
-
-
-# aws_instance = AWSInstance("172.31.88.161")
-
-# aws_instance.get_cpu_usage(hours=24, interval=3600)
