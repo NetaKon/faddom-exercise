@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+}
+
+canvas {
+  width: 100% !important;
+}

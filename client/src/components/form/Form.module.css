@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-right: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
